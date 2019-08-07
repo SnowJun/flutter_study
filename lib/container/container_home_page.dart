@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class ContainerHomePage extends StatelessWidget{
+class ContainerHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,9 +25,30 @@ class ContainerHomePage extends StatelessWidget{
                   Navigator.of(context).pushNamed("constrainedbox_page");
                 }),
           ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: RaisedButton(
+                child: Text("DecoratedBox"),
+                onPressed: () {
+                  Navigator.of(context).pushNamed("decoratedbox_page");
+                }),
+          ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: RaisedButton(
+                child: Text("TransformPage"),
+                onPressed: () {
+                  Navigator.of(context).pushNamed("transformPage_page");
+                }),
+          ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: RaisedButton(child: Text("Container"),onPressed: () {
+              Navigator.of(context).pushNamed("container_page");
+            }),
+          )
         ],
       ),
     );
   }
-
 }

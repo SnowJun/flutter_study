@@ -13,8 +13,11 @@ import 'package:flutter_app/textlayout/InputFormPage.dart';
 import 'package:flutter_app/textlayout/WrapPage.dart';
 
 import 'container/constrainedbox.dart';
+import 'container/container.dart';
 import 'container/container_home_page.dart';
+import 'container/decorated_box.dart';
 import 'container/padding.dart';
+import 'container/transform.dart';
 
 void main() => runApp(MyApp());
 
@@ -53,6 +56,9 @@ class MyApp extends StatelessWidget {
         "container_home_page":(context)=>new ContainerHomePage(),
         "padding_page":(context)=>new PaddingPage(),
         "constrainedbox_page":(context)=>new ConstrainedBoxPage(),
+        "decoratedbox_page":(context)=>new DecoratedBoxPage(),
+        "transformPage_page":(context)=>new TransformPage(),
+        "container_page":(context)=>new ContainerPage(),
 
       },
     );
