@@ -17,6 +17,7 @@ import 'container/container.dart';
 import 'container/container_home_page.dart';
 import 'container/decorated_box.dart';
 import 'container/padding.dart';
+import 'container/scaffold.dart';
 import 'container/transform.dart';
 
 void main() => runApp(MyApp());
@@ -59,6 +60,7 @@ class MyApp extends StatelessWidget {
         "decoratedbox_page":(context)=>new DecoratedBoxPage(),
         "transformPage_page":(context)=>new TransformPage(),
         "container_page":(context)=>new ContainerPage(),
+        "scaffold_page":(context)=>new ScaffoldPage(),
 
       },
     );
