@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/scrollwidget/listview.dart';
+import 'package:flutter_app/scrollwidget/scroll_home_page.dart';
+import 'package:flutter_app/scrollwidget/single_child_scrollView.dart';
 import 'package:flutter_app/textlayout/stack_positioned.dart';
 
 import 'package:flutter_app/textlayout/FlexPage.dart';
@@ -63,6 +66,10 @@ class MyApp extends StatelessWidget {
         "container_page":(context)=>new ContainerPage(),
         "scaffold_page":(context)=>new ScaffoldPage(),
         "clip_page":(context)=>new ClipPage(),
+        //滑动组件相关
+        "scroll_home_page":(context)=>new ScrollHomePage(),
+        "single_child_scroll_view_page":(context)=>new SingleChildScrollViewPage(),
+        "list_view_page":(context)=>new ListViewPage(),
 
       },
     );

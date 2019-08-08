@@ -23,6 +23,12 @@ class HomePage extends StatelessWidget {
             child: RaisedButton(child: Text("容器"), onPressed: () {
               Navigator.of(context).pushNamed("container_home_page");
             }),
+          ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: RaisedButton(child: Text("滑动组件"),onPressed: (){
+              Navigator.of(context).pushNamed("scroll_home_page");
+            }),
           )
         ],
       ),
