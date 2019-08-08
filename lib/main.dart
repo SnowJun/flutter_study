@@ -12,6 +12,7 @@ import 'package:flutter_app/textlayout/ImageIconPage.dart';
 import 'package:flutter_app/textlayout/InputFormPage.dart';
 import 'package:flutter_app/textlayout/WrapPage.dart';
 
+import 'container/clip.dart';
 import 'container/constrainedbox.dart';
 import 'container/container.dart';
 import 'container/container_home_page.dart';
@@ -61,6 +62,7 @@ class MyApp extends StatelessWidget {
         "transformPage_page":(context)=>new TransformPage(),
         "container_page":(context)=>new ContainerPage(),
         "scaffold_page":(context)=>new ScaffoldPage(),
+        "clip_page":(context)=>new ClipPage(),
 
       },
     );

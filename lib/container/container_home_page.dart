@@ -43,15 +43,27 @@ class ContainerHomePage extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.all(10.0),
-            child: RaisedButton(child: Text("Container"),onPressed: () {
-              Navigator.of(context).pushNamed("container_page");
-            }),
+            child: RaisedButton(
+                child: Text("Container"),
+                onPressed: () {
+                  Navigator.of(context).pushNamed("container_page");
+                }),
           ),
           Padding(
             padding: EdgeInsets.all(10.0),
-            child: RaisedButton(child: Text("Scaffold"),onPressed: () {
-              Navigator.of(context).pushNamed("scaffold_page");
-            }),
+            child: RaisedButton(
+                child: Text("Scaffold"),
+                onPressed: () {
+                  Navigator.of(context).pushNamed("scaffold_page");
+                }),
+          ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: RaisedButton(
+                child: Text("Clip"),
+                onPressed: () {
+                  Navigator.of(context).pushNamed("clip_page");
+                }),
           ),
         ],
       ),
