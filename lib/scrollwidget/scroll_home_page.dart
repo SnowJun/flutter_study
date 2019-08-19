@@ -14,12 +14,42 @@ class ScrollHomePage extends StatelessWidget {
             child: RaisedButton(
                 child: Text("SingleChildScrollViewPage"),
                 onPressed: () {
-                  Navigator.of(context).pushNamed("single_child_scroll_view_page");
+                  Navigator.of(context)
+                      .pushNamed("single_child_scroll_view_page");
                 }),
           ),
-          Padding(padding: EdgeInsets.all(10.0),child: RaisedButton(child: Text("ListViewPage"),onPressed: (){
-            Navigator.of(context).pushNamed("list_view_page");
-          }),)
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: RaisedButton(
+                child: Text("ListViewPage"),
+                onPressed: () {
+                  Navigator.of(context).pushNamed("list_view_page");
+                }),
+          ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: RaisedButton(
+                child: Text("ListViewBuilderPage"),
+                onPressed: () {
+                  Navigator.of(context).pushNamed("list_view_builder_page");
+                }),
+          ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: RaisedButton(
+                child: Text("ListViewSeparatedPage"),
+                onPressed: () {
+                  Navigator.of(context).pushNamed("list_view_separated_page");
+                }),
+          ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: RaisedButton(
+                child: Text("ListViewInfinitePage"),
+                onPressed: () {
+                  Navigator.of(context).pushNamed("list_view_infinite_page");
+                }),
+          )
         ],
       ),
     );

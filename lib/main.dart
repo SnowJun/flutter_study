@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/scrollwidget/listview.dart';
+import 'package:flutter_app/scrollwidget/listview_builder.dart';
+import 'package:flutter_app/scrollwidget/listview_infinite.dart';
+import 'package:flutter_app/scrollwidget/listview_separated.dart';
 import 'package:flutter_app/scrollwidget/scroll_home_page.dart';
 import 'package:flutter_app/scrollwidget/single_child_scrollView.dart';
 import 'package:flutter_app/textlayout/stack_positioned.dart';
@@ -70,6 +73,9 @@ class MyApp extends StatelessWidget {
         "scroll_home_page":(context)=>new ScrollHomePage(),
         "single_child_scroll_view_page":(context)=>new SingleChildScrollViewPage(),
         "list_view_page":(context)=>new ListViewPage(),
+        "list_view_builder_page":(context)=>new ListViewBuilderPage(),
+        "list_view_separated_page":(context)=>new ListViewSeparatedPage(),
+        "list_view_infinite_page":(context)=>new ListViewInfinitePage(),
 
       },
     );
