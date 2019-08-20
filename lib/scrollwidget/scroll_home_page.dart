@@ -90,6 +90,12 @@ class ScrollHomePage extends StatelessWidget {
                   Navigator.of(context).pushNamed("grid_view_builder_page");
                 }),
           ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: RaisedButton(child: Text("CustomScrollViewPage"),onPressed: (){
+              Navigator.of(context).pushNamed("custom_scrollview_page");
+            }),
+          )
         ],
       ),
     );
