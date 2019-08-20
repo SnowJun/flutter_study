@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/scrollwidget/gridview.dart';
+import 'package:flutter_app/scrollwidget/gridview_builder.dart';
 import 'package:flutter_app/scrollwidget/listview.dart';
 import 'package:flutter_app/scrollwidget/listview_builder.dart';
 import 'package:flutter_app/scrollwidget/listview_infinite.dart';
@@ -76,6 +78,11 @@ class MyApp extends StatelessWidget {
         "list_view_builder_page":(context)=>new ListViewBuilderPage(),
         "list_view_separated_page":(context)=>new ListViewSeparatedPage(),
         "list_view_infinite_page":(context)=>new ListViewInfinitePage(),
+        "grid_view_page":(context)=>new GridViewPage(),
+        "grid_view_count_page":(context)=>new GridViewCountPage(),
+        "grid_view_max_page":(context)=>new GridViewMaxPage(),
+        "grid_view_extent_page":(context)=>new GridViewExtentPage(),
+        "grid_view_builder_page":(context)=>new GridViewBuilderPage(),
 
       },
     );

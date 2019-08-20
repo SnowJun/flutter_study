@@ -49,7 +49,47 @@ class ScrollHomePage extends StatelessWidget {
                 onPressed: () {
                   Navigator.of(context).pushNamed("list_view_infinite_page");
                 }),
-          )
+          ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: RaisedButton(
+                child: Text("GridViewPage"),
+                onPressed: () {
+                  Navigator.of(context).pushNamed("grid_view_page");
+                }),
+          ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: RaisedButton(
+                child: Text("GridViewCountPage"),
+                onPressed: () {
+                  Navigator.of(context).pushNamed("grid_view_count_page");
+                }),
+          ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: RaisedButton(
+                child: Text("GridViewMaxPage"),
+                onPressed: () {
+                  Navigator.of(context).pushNamed("grid_view_max_page");
+                }),
+          ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: RaisedButton(
+                child: Text("GridViewExtentPage"),
+                onPressed: () {
+                  Navigator.of(context).pushNamed("grid_view_extent_page");
+                }),
+          ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: RaisedButton(
+                child: Text("GridViewBuilderPage"),
+                onPressed: () {
+                  Navigator.of(context).pushNamed("grid_view_builder_page");
+                }),
+          ),
         ],
       ),
     );
