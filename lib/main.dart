@@ -7,6 +7,7 @@ import 'package:flutter_app/scrollwidget/listview_builder.dart';
 import 'package:flutter_app/scrollwidget/listview_infinite.dart';
 import 'package:flutter_app/scrollwidget/listview_separated.dart';
 import 'package:flutter_app/scrollwidget/scroll_home_page.dart';
+import 'package:flutter_app/scrollwidget/scrollcontroller.dart';
 import 'package:flutter_app/scrollwidget/single_child_scrollView.dart';
 import 'package:flutter_app/textlayout/stack_positioned.dart';
 
@@ -29,6 +30,8 @@ import 'container/decorated_box.dart';
 import 'container/padding.dart';
 import 'container/scaffold.dart';
 import 'container/transform.dart';
+import 'net/http.dart';
+import 'net/net_home_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -85,7 +88,10 @@ class MyApp extends StatelessWidget {
         "grid_view_extent_page":(context)=>new GridViewExtentPage(),
         "grid_view_builder_page":(context)=>new GridViewBuilderPage(),
         "custom_scrollview_page":(context)=>new CustomScrollViewPage(),
-
+        "scroll_controller_page":(context)=>new ScrollControllerPage(),
+      //网络相关
+        "net_home_page":(context)=>new NetHomePage(),
+        "http_test_page":(context)=>new HttpTest(),
       },
     );
   }
