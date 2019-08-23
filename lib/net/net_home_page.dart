@@ -18,6 +18,15 @@ class NetHomePage extends StatelessWidget {
                       .pushNamed("http_test_page");
                 }),
           ),
+          Padding(
+            padding: EdgeInsets.all(10.0),
+            child: RaisedButton(
+                child: Text("DioNet"),
+                onPressed: () {
+                  Navigator.of(context)
+                      .pushNamed("dio_net_page");
+                }),
+          ),
         ],
       ),
     );

@@ -30,6 +30,7 @@ import 'container/decorated_box.dart';
 import 'container/padding.dart';
 import 'container/scaffold.dart';
 import 'container/transform.dart';
+import 'net/dio.dart';
 import 'net/http.dart';
 import 'net/net_home_page.dart';
 
@@ -92,6 +93,7 @@ class MyApp extends StatelessWidget {
       //网络相关
         "net_home_page":(context)=>new NetHomePage(),
         "http_test_page":(context)=>new HttpTest(),
+        "dio_net_page":(context)=>new DioNetPage(),
       },
     );
   }
